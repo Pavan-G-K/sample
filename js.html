@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <center>
+    <h2>Login Page</h2>
+    <input type="text" id="user" placeholder="Enter Username">
+    <br><br>
+    <input type="password" id="pass" placeholder="Enter Password">
+    <br><br>
+    <button onclick="login()">Login</button>
+    <h3 id="result"></h3>
+    <script>
+        function login() {
+            var username = document.getElementById("user").value;
+            var password = document.getElementById("pass").value;
+            if (username == "student" && password == "123") {
+                document.getElementById("result").innerHTML = "Welcome, " + username + "!";
+                alert("Login Success");
+            }
+             else {
+                document.getElementById("result").innerHTML = "Wrong username or password";
+            }
+        }
+    </script>
+    </center>
+</body>
+</html>

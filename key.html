@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;   /* center horizontally */
+    align-items: center;       /* center vertically */
+    height: 100vh;
+    background-color: #f2f2f2;
+    flex-direction: column;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#box {
+    margin-top: 20px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;   /* center text inside box */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: none;
+}
+</style>
+</head>
+
+<body>
+
+<button id="shetty">Open / Close</button>
+
+<div id="box">
+    Hello 👋 This text is perfectly centered!
+</div>
+
+<script>
+document.getElementById("shetty").onclick = function() {
+
+    alert("Button clicked!");
+
+    let box = document.getElementById("box");
+
+    if (box.style.display === "none") {
+        box.style.display = "block";
+    } else {
+        box.style.display = "none";
+    }
+};
+</script>
+
+</body>
+</html>
